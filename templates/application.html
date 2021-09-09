@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> register </title>
+        <link rel="stylesheet" href="../static/style.css">       
+    </head>
+    <body>
+        <div class="applicationcontent" align="center">
+            <div class="applicationtop">
+                <h1>Application</h1>
+            </div></br></br>
+            <div class="applicationbottom">
+              <form action="{{ url_for('application')}}" method="post" autocomplete="off">
+            <div class="msg">{{ msg }}</div>
+            <input type="text" name="admin_date" placeholder="Enter Semester/Year of Application" class="textbox" id="admin_date" required></br></br>
+            <input type="text" name="degree_app" placeholder="Major/Degree applying for" class="textbox" id="degree_app" required></br></br>
+            <input type="text" name="bachelor" placeholder="Previous Bachelor" class="textbox" id="bachelor" required></br></br>
+            <input type="text" name="bach_school" placeholder="Undergrad School" class="textbox" id="bach_school" required></br></br>
+            <input type="text" name="bach_gpa" placeholder="GPA" class="textbox" id="bach_gpa" required></br></br>
+            <input type="text" name="GRE_verbal" placeholder="GRE Verbal Score" class="textbox" id="GRE_verbal" required></br></br>
+            <input type="text" name="GRE_quant" placeholder="GRE Quantitative Score" class="textbox" id="GRE_quant" required></br></br>
+            <input type="submit" class="btn" value="Apply">
+              </form>
+            </div>
+        </div>
+    </body>
+</html>

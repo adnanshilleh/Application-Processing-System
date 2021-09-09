@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> register </title>
+        <link rel="stylesheet" href="../static/style.css">       
+    </head>
+    <body>
+        <div class="submitletterscontent" align="center">
+            <div class="submitletterstop">
+                <h1>Submit Recommendation Letters</h1>
+            </div></br></br>
+            <div class="submitlettersbottom">
+              <form action="{{ url_for('submitletters')}}" method="post" autocomplete="off">
+            <div class="msg">{{ msg }}</div>
+            <input type="text" name="fullname1" placeholder="Enter first sender's full name" class="textbox" id="fullname1" required></br></br>
+            <input type="text" name="rec_email1" placeholder="Enter first sender's email" class="textbox" id="rec_email1" required></br></br>
+            <input type="text" name="title1" placeholder="Enter first sender's title" class="textbox" id="title1" required></br></br>
+            <input type="text" name="affiliation1" placeholder="Enter first sender's affiliation" class="textbox" id="affiliation1" required></br></br>
+            <input type="text" name="fullname2" placeholder="Enter second sender's full name" class="textbox" id="fullname2" required></br></br>
+            <input type="text" name="rec_email2" placeholder="Enter second sender's email" class="textbox" id="rec_email2" required></br></br>
+            <input type="text" name="title2" placeholder="Enter second sender's title" class="textbox" id="title1" required></br></br>
+            <input type="text" name="affiliation2" placeholder="Enter second sender's affiliation" class="textbox" id="affiliation2" required></br></br>
+            <input type="text" name="fullname3" placeholder="Enter third sender's full name" class="textbox" id="fullname3" required></br></br>
+            <input type="text" name="rec_email3" placeholder="Enter third sender's email" class="textbox" id="rec_email3" required></br></br>
+            <input type="text" name="title3" placeholder="Enter third sender's title" class="textbox" id="title3" required></br></br>
+            <input type="text" name="affiliation3" placeholder="Enter first sender's affiliation" class="textbox" id="affiliation3" required></br></br>
+            <input type="submit" class="btn" value="Submit">
+              </form>
+            </div>
+        </div>
+    </body>
+</html>
